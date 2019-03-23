@@ -1,12 +1,5 @@
 /* global $ */
 
-console.log('hi');
-
-$('h1').click(function(){
-    $('h1').css('color', 'green');
-    $('h1').text('Ready to Code');
-});
-
 
 $(document).ready(function() {
     var firstLevel = game.levels.start;
@@ -37,6 +30,7 @@ function renderLevel(level) {
 
     setMusic(level);
     setImage(level);
+    // setColor(level);
 }
 
 var currentMusic = "";
@@ -53,6 +47,10 @@ function setMusic(level) {
 function setImage(level) {
     var image = level.background_image || game.background_image || "";
     $("#background-image").css("background-image", "url(./img/" + image + ")");
+}
+
+function setColor() {
+    var color
 }
 
 $.fn.extend({
