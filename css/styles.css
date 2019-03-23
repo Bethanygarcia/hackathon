@@ -8,7 +8,7 @@ body {
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
-  background-color: black;
+  background-color: white;
 }
 html {
   width: 100%;
@@ -57,7 +57,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: white;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -113,7 +113,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: black;
+    background: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
@@ -133,7 +133,7 @@ a:focus {
   background-origin: initial;
   background-clip: initial;
   background-color: rgb(0, 0, 0);
-  background-color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -233,7 +233,7 @@ a:focus {
   padding: 50px 0;
   color: white;
   background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -274,7 +274,7 @@ a:focus {
 .btn-default:focus {
   border: 1px solid #42DCA3;
   outline: none;
-  color: black;
+  color: white;
   background-color: #42DCA3;
 }
 ul.banner-social-buttons {
@@ -323,6 +323,10 @@ body {
 #responseImage{
   width:500px;
   height:300px;
-  background-size: cover
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-size: contain
+  
   
 }
