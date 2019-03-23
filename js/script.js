@@ -30,7 +30,7 @@ function renderLevel(level) {
 
     setMusic(level);
     setImage(level);
-    // setColor(level);
+    setColor(level);
 }
 
 var currentMusic = "";
@@ -45,12 +45,22 @@ function setMusic(level) {
 }
 
 function setImage(level) {
+    var responseImage = level.responseImage;
     var image = level.background_image || game.background_image || "";
     $("#background-image").css("background-image", "url(./img/" + image + ")");
+    if(responseImage){
+    $("#responseImage").css("background-image", "url(" + responseImage + ")");
+}else{
+    $("#responseImage").css("background-image","");
+}
+    
+
 }
 
-function setColor() {
-    var color
+var currentColor = "";
+function setColor(level) {
+    var color = level.color;
+    $(".intro").css("background-color", color);
 }
 
 $.fn.extend({
