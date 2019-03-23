@@ -9,13 +9,13 @@ var game = {
             choices: [
                 {
                     text: "Start here",
-                    nextLevel: "startHere",
+                    nextLevel: "second",
                 },
             ]
         },
 
-        startHere: {
-            background_image: "fire.gif",
+        second: {
+            background_image: "/img/greenhouse.jpg",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
             message: "Goodmorning, its 75 degrees Farenheit in NYC and the sun is beciming through your window. Do you...",
             choices: [
@@ -34,12 +34,8 @@ var game = {
             message: "Congrats, you just saved $1.08 and sneak in some fire selfies. #goldenhour ;)",
             choices: [
                 {
-                    text: "",
-                    nextLevel: "",
-                },
-                {
-                    text: "",
-                    nextLevel: "",
+                    text: "Yay",
+                    nextLevel: "three",
                 },
             ]
         },
@@ -48,15 +44,68 @@ var game = {
             message: "your electricity bill hates you, and you just relesed 25.8 grams of CO2",
             choices: [
                 {
+                    text: "Damn",
+                    nextLevel: "three",
+                },
+            ]
+        },
+        
+        three: {
+            message: "Okay, now its time to shower and start your day. Do you...",
+            choices: [
+                {
+                    text: "Take a quick 5 minute shower",
+                    nextLevel: "quick",
+                    
+                },
+                
+                {
+                    text: "Pull off a whole Beyonce dance rountine in the span of 30 mins",
+                    nextLevel: "long",
+                    
+                },
+            ]
+        },
+        
+        quick: {
+            message: "Awsome you only used 2.25 lbs of CO2 saving 11.25 if you were to take 30 mins, plus you smell great.",
+            choices: [
+                {
+                    text: "Good for you",
+                    nextLevel: "four",
+                    
+                },
+                
+            ]
+        },
+        
+        long: {
+            message: "Okay hurd the dance moves, but you just used 13.5 lbs of CO2 which is equivilant to 1.672 bottles of 2 liter sodas.",
+            choices: [
+                {
+                    text: "Now you're just dragging it",
+                    nextLevel: "four",
+                    
+                },
+                
+            ]
+        },
+        
+        four: {
+            message: "",
+            choices: [
+                {
                     text: "",
                     nextLevel: "",
+                    
                 },
                 {
                     text: "",
                     nextLevel: "",
+                    
                 },
+                
             ]
         },
-
     }
 };

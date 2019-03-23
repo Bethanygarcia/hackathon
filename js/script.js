@@ -7,28 +7,6 @@ $('h1').click(function(){
     $('h1').text('Ready to Code');
 });
 
-var game = {
-    background_image: "space.gif",
-    levels: {
-
-        start: {
-        message: "",
-            choices: [
-                {
-                    text: "",
-                    nextLevel: "",
-                },
-
-                {
-                    text: "",
-                    nextLevel: "",
-                },
-                    ]
-        },
-    }
-};
-
-
 
 $(document).ready(function() {
     var firstLevel = game.levels.start;
